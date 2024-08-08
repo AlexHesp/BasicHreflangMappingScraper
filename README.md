@@ -24,9 +24,9 @@ This project is a Python script that crawls URLs extracted from a sitemap, retri
 1. Clone this repository.
 2. Install the required libraries:
 
-```sh
-pip install requests beautifulsoup4 lxml
-
+    ```sh
+    pip install requests beautifulsoup4 lxml
+    ```
 
 ## Usage:
 
@@ -34,9 +34,11 @@ pip install requests beautifulsoup4 lxml
 
 ```python
 sitemap_url = 'https://example.com/sitemap.xml'
+```
 
 ### Add your personal User-Agent & cookie session id:
 
+```python
 custom_headers = {
     'User-Agent': 'Your User Agent'
 }
@@ -44,6 +46,7 @@ custom_headers = {
 custom_cookies = {
     'session_id': 'Your Session ID'
 }
+```
 
 ## Script Explanation:
 
@@ -65,4 +68,4 @@ custom_cookies = {
 - **Errors in retrieving pages** are logged.
 - If a page retrieval fails, the corresponding row in the CSV file is marked with **ERROR**.
 
-Thanks Alex Hesp-Gollins
+Thanks, Alex Hesp-Gollins
